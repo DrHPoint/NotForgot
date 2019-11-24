@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">NotForgot</string>
     <string name="registration_name">Регистрация</string>
+    <string name="authorization_name">Вход</string>
     <string name="hint_name">Имя</string>
     <string name="hint_email">Ваш email</string>
     <string name="hint_password">Пароль</string>
