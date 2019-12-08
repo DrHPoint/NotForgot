@@ -1,8 +1,6 @@
-package ru.teslateam.notforgot.models
+package ru.teslateam.notforgot.NotForgotAPI
 
 import com.google.gson.annotations.SerializedName
-
-import java.util.ArrayList
 
 class RequestRegister {
     @SerializedName("email")

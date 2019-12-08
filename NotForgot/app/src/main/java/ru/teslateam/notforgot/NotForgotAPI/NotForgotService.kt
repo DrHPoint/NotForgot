@@ -1,13 +1,15 @@
-package ru.teslateam.notforgot.models
+package ru.teslateam.notforgot.NotForgotAPI
 
 import retrofit2.Call
 import retrofit2.http.*
 
 interface NotForgotService {
     @POST("/register")
+    @Headers("No-Authentication: true")
     fun postNewUser(@Query("email") email: String, @Query("name") name: String, @Query("password") password: String): Call<RequestRegister>
 
     @POST("/login")
+    @Headers("No-Authentication: true")
     fun postUser(@Query("email") email: String, @Query("password") password: String): Call<ReguestAuthorization>
 
     @GET("/priorities")
